@@ -95,7 +95,7 @@ This is where SupportDocs gets its data!
 - [Buy orange boba](https://aheze.github.io/SupportDocsTestingTemplate3/Sample-Boba/BuyOrangeBoba) ([edit](https://github.com/aheze/SupportDocsTestingTemplate3/edit/DataSource/Sample-Boba/BuyOrangeBoba.md))
 
 
-*Note: Your changes make take up to 5 minutes to update.*
+*Note: Your changes make take up to 5 minutes to update. You can track the progress [here]()*
 
 ## Warning
 Do **not** update this file (`README.md`) directly. Your changes will be overriden the next time you push (the GitHub action will re-generate this file). Instead, update the file in `_scripts/README.md`. 
