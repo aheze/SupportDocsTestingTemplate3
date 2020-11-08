@@ -80,5 +80,7 @@ This is where SupportDocs gets its data!
 ## Table of Contents
 {{ table_of_contents }}
 
-## Notes
-Do **not** update this file (`README.md`) directly. Instead, update the file in `_scripts/README.md`.
+*Note: Your changes make take up to 5 minutes to update.*
+
+## Warning
+Do **not** update this file (`README.md`) directly. Your changes will be overriden the next time you push (the GitHub action will re-generate this file). Instead, update the file in `_scripts/README.md`. 
