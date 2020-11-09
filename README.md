@@ -28,14 +28,20 @@ Blue and yummy. Buy this at [google.com](https://google.com)
 Once your documents have `tags`, you can start using categories inside your app. Here’s how to make SupportDocs display one category that contains all documents tagged with “boba”:
 
 <table>
-  <tr>
-  </tr>
+
   <tr>
   <td>
-    
+    SwiftUI
+  </td>
+  <td rowspan="4">
+    <img src="https://raw.githubusercontent.com/aheze/SupportDocs/main/Assets/Categories/oneCategory.png" width="200">
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+
   ```Swift
-  /// SwiftUI
-  
   let options = SupportOptions(
       categories: [
           .init(
@@ -47,8 +53,27 @@ Once your documents have `tags`, you can start using categories inside your app.
   )
   ```
   </td>
+  </tr>
+
+  <tr>
   <td>
-  <img src="https://raw.githubusercontent.com/aheze/SupportDocs/main/Assets/NavigationBar/navigationTitleColor.png">
+    UIKit
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+
+  ```Swift
+  var options = SupportOptions()
+  let bobaCategory = SupportOptions.Category(
+      jsonTagNames: ["boba"],
+      displayName: "Display Name Is Boba",
+      displayColor: UIColor.blue
+  )
+        
+  options.categories = [bobaCategory]
+  ```
   </td>
   </tr>
 </table>
@@ -61,9 +86,11 @@ Once your documents have `tags`, you can start using categories inside your app.
   <td>
     SwiftUI
   </td>
-  
+  <td>
+    UIKit
+  </td>
   </tr>
-
+  
   <tr>
   <td>
 
@@ -92,15 +119,6 @@ Once your documents have `tags`, you can start using categories inside your app.
   }
   ```
   </td>
-  </tr>
-
-  <tr>
-  <td>
-    UIKit
-  </td>
-  </tr>
-
-  <tr>
   <td>
 
   ```Swift
@@ -131,6 +149,7 @@ Once your documents have `tags`, you can start using categories inside your app.
   ```
   </td>
   </tr>
+
 </table>
 </details>
 
