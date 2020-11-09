@@ -13,7 +13,7 @@ It’s easier to understand with an example. We’ll use the [documents](https:/
 
 ![](https://raw.githubusercontent.com/aheze/SupportDocs/main/Assets/Categories/colorCategories.png)
 
-As you can see, each document has tags applied to them. You put this in the [front matter](https://jekyllrb.com/docs/front-matter/), underneath the `title:` like this:
+As you can see, each document has `tags` applied to them. You put this in the [front matter](https://jekyllrb.com/docs/front-matter/), underneath the `title:` like this:
 
 ```
 ---
@@ -25,7 +25,7 @@ tags: boba <!-- put tags here! -->
 
 Blue and yummy. Buy this at [google.com](https://google.com)
 ```
-Once your documents have tags, you can start using categories inside your app. Here’s how to make SupportDocs display one category that contains all documents tagged with “boba”:
+Once your documents have `tags`, you can start using categories inside your app. Here’s how to make SupportDocs display one category that contains all documents tagged with “boba”:
 
 <table>
   <tr>
@@ -134,3 +134,62 @@ Once your documents have tags, you can start using categories inside your app. H
 </table>
 </details>
 
+Here's how to use 2 catecories:
+<table>
+  <tr>
+  </tr>
+  <tr>
+  <td>
+    
+  ```Swift
+  /// SwiftUI
+  
+  let options = SupportOptions(
+      categories: [
+          .init(
+              jsonTagNames: ["boba"],
+              displayName: "Display Name Is Boba",
+              displayColor: UIColor.blue
+          ),
+          .init(
+              jsonTagNames: ["fastFood"],
+              displayName: "These aren't really healthy",
+              displayColor: UIColor.red
+          )
+      ]
+  )
+  ```
+  </td>
+  <td>
+  <img src="https://raw.githubusercontent.com/aheze/SupportDocs/main/Assets/NavigationBar/navigationTitleColor.png">
+  </td>
+  </tr>
+</table>
+
+You can also combine multiple `tags` into one category, like this:
+
+<table>
+  <tr>
+  </tr>
+  <tr>
+  <td>
+    
+  ```Swift
+  /// SwiftUI
+  
+  let options = SupportOptions(
+      categories: [
+          .init(
+              jsonTagNames: ["boba", "fastFood"],
+              displayName: "Food that tastes great",
+              displayColor: UIColor.orange
+          )
+      ]
+  )
+  ```
+  </td>
+  <td>
+  <img src="https://raw.githubusercontent.com/aheze/SupportDocs/main/Assets/NavigationBar/navigationTitleColor.png">
+  </td>
+  </tr>
+</table>
